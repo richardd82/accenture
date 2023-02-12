@@ -38,3 +38,18 @@
     left: 23%;
     top: 16%;
 }
+@media only screen and (max-width: 1006px) and (min-width: 668px){
+    .bodyDetails p{
+        font-size: 1.5em;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 667px) and (min-width: 500px){
+    .bodyDetails p{
+        font-size: 1em;
+        width: 80%;
+    }
+    .imgTitle{
+        font-size: 1.5em;
+    }
+}

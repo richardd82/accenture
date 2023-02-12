@@ -74,3 +74,27 @@
 .btnSubmit:hover{
     background-color: rgb(247, 107, 14);
 }
+@media only screen and (max-width: 1500px) and (min-width: 1101px){
+    .formModal input {
+        font-size: 16px;
+        width: 200px;
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-width: 1100px) and (min-width: 500px){
+    .formModal input {
+        font-size: 16px;
+        width: 200px;
+        margin-bottom: 80px;
+    }
+
+    .modalOpened {
+        width: 100%;
+        z-index: 2;
+    
+    }
+    .modalContainer {
+        width: 70% !important;
+        left: 10%;
+    }
+}
