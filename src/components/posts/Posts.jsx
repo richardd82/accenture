@@ -1,31 +1,38 @@
-import React, { useState } from 'react'
-import './posts.css'
-import axios from 'axios';
+import React from "react";
+import "./posts.css";
+import { Link } from "react-router-dom";
 
 const Posts = (allPosts) => {
-
-    let post = allPosts;
-    // console.log("POST", post.allPosts)
-    const [images, setImages] = useState([])
-    const getAPI = async() =>{
-        const res = await axios.get(`https://source.unsplash.com/random`);
-        const data = await res.data
-        setImages(data)
-    }
+  let post = allPosts;
 
   return (
-       
-    <div className='postsContainer'>
-        {post.allPosts && post.allPosts?.map((p) => (
-            <div className=' postCard' key={p.id} style={{backgroundImage: `${images}`}}>
+    <div className="postsContainer">
+      {post.allPosts &&
+        post.allPosts?.map((p) => (
+          <div
+            key={p.id}
+            className=" postCard"
+            style={{
+              backgroundImage: `url("https://source.unsplash.com/random/${p.id}")`,
+            }}
+          >
+            <div className="infoCard">
+              <Link
+                     to={`/post/${p.id} `}
+                  state= {{
+                    name: p.name,
+                    body: p.body,
+                    image: `https://source.unsplash.com/random/${p.id}`                  
+                }}
+              >
                 <h1>{p.name}</h1>
                 <p>{p.body}</p>
+              </Link>
             </div>
+          </div>
         ))}
     </div>
-       
-  )
-
-}
+  );
+};
 
 export default Posts;

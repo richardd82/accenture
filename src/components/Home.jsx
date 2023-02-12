@@ -1,17 +1,22 @@
 import React, { useEffect } from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllPosts } from "../redux/actions/index";
 import Posts from "./posts/Posts";
+import {RxPencil1} from 'react-icons/rx'
 import './home.css';
 
 const Home = () => {
   const dispatch = useDispatch();
   const allPosts = useSelector((state) => state.posts);
+//   const allImages = useSelector((state) => state.images);
 
   useEffect(() => {
     dispatch(getAllPosts());
+    // dispatch(getImages());
   }, [dispatch]);
+
+//   console.log(allImages)
 
   return <div>
     <section className="Head">
@@ -20,7 +25,9 @@ const Home = () => {
     </div>
     <div className="title">Discovering the World</div>
     </section>
-
+    <section className="btnCreateContainer">
+        <div className="btnCreatePost"><RxPencil1 className="react-icons" size={40} /></div>
+    </section>
     <section>
         <div className="filtersList">
             <ul>

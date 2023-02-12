@@ -1,0 +1,40 @@
+.containerPostDetails{
+    display: flex;
+    width: 56%;    
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgTitle{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;  
+    color: white;
+}
+.bodyDetails{
+    height: 30vh;
+    width: 56%;
+    margin: auto;
+    background-color: rgb(230, 230, 233);
+    color: black;
+}
+.bodyDetails p{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: auto;
+    padding-top: 30px;
+    padding-right: 350px;
+    width: 50%;
+    text-align: left;
+}
+.linkReturn{
+    display: flex;
+    margin: 0px;
+    position: absolute;
+    left: 23%;
+    top: 16%;
+}

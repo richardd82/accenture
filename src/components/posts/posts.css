@@ -1,16 +1,26 @@
 .postsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
     width: 100%;
     flex-direction: row;
 }
+.postCard a{
+    text-decoration: none;
+    color: white;
+}
 
 .postCard {        
-    width: 951px;
+    display: flex;
+    width: 885px;
     height: 350px;
     margin: 0px;
-    color: rgb(37, 20, 20);
+    color: rgb(252, 252, 252);
+    align-items: center;
+}
+.infoCard{
+    text-align: left;
+    margin-left: 50px;
 }

@@ -11,7 +11,21 @@
     font-size: 3.2em;
     font-weight: 700;
 }
-
+.btnCreateContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 80px;
+}
+.btnCreatePost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #e69155;
+    width: 50px;
+    height: 50px;
+}
 .filtersList {    
     display: flex;
     justify-content: center;
@@ -20,7 +34,6 @@
 .filtersList ul {
     text-align: center;
     list-style-type: none;
-    margin-left: -40px;
 }
 
 .filtersList li {
@@ -34,3 +47,7 @@
 .filtersList li:hover{
     background-color:rgba(180, 180, 180, 0.562) ;
 }
+.react-icons {
+    color: white;
+    margin-top: 6px;
+  }
