@@ -16,17 +16,10 @@ export function getAllPosts() {
     }
   };
 }
-// export function getImages() {
-//   return async function (dispatch) {
-//     try {
-//       var json = await axios.get(`https://source.unsplash.com/collection/928423/1200x1200/?sig=${Math.random()/2})}`);
-//       console.log("POOOOOOSTTTSSS", json)
-//       return dispatch({
-//         type: GET_IMAGES,
-//         payload: json.data,
-//       });
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
-// }
+export function createPost(payload){
+  return async function(dispatch){
+      var json = await axios.post(`https://jsonplaceholder.typicode.com/posts`, payload);    
+      console.log(json)
+      return json;
+  };
+}

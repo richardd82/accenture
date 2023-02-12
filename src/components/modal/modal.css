@@ -1,0 +1,76 @@
+.modalContainer {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    left: 38%;
+    z-index: 0;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.modalOpened {
+    width: 95%;
+    z-index: 2;
+
+}
+
+.backModal {
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+}
+
+.formModal {
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 13%;
+}
+
+.formModal input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #8d8c8c;
+    background: transparent;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+.closeModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.btnCancel{
+    cursor: pointer;
+    width: 40%;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 15px;
+}
+.btnCancel:hover{
+    background-color: rgb(247, 107, 14);
+    color: white;
+}
+.btnSubmit{
+    cursor: pointer;
+    width: 40%;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(42, 78, 197);
+}
+.btnSubmit:hover{
+    background-color: rgb(247, 107, 14);
+}

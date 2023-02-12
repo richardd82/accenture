@@ -25,6 +25,7 @@
     background-color: #e69155;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 .filtersList {    
     display: flex;
@@ -49,5 +50,5 @@
 }
 .react-icons {
     color: white;
-    margin-top: 6px;
+    margin-top: 10px;
   }
