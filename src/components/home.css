@@ -1,0 +1,36 @@
+.littleTitle {
+    display: flex;
+    flex-direction: row;
+    color: #e69155;
+    margin: auto;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3.2em;
+    font-weight: 700;
+}
+
+.filtersList {    
+    display: flex;
+    justify-content: center;
+}
+
+.filtersList ul {
+    text-align: center;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.filtersList li {
+    float: left;
+    text-align: center;
+    border: 1px rgba(180, 180, 180, 0.562) solid;
+    width: 5em;
+    height: 2em;
+    padding-top: 10px;
+}
+.filtersList li:hover{
+    background-color:rgba(180, 180, 180, 0.562) ;
+}

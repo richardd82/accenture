@@ -1,0 +1,16 @@
+.postsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    flex-direction: row;
+}
+
+.postCard {        
+    width: 951px;
+    height: 350px;
+    margin: 0px;
+    color: rgb(37, 20, 20);
+}
